@@ -1,5 +1,8 @@
-const d = document;
+import Glide from 'https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js'
 
+
+const d = document;
+/* hamburger menu */
 function hamburgerMenu(panelbtn, navmain, menuLink) {
   d.addEventListener("click", (e) => {
     if (e.target.matches(panelbtn) || e.target.matches(`${panelbtn} *`))
@@ -17,3 +20,11 @@ d.addEventListener("DOMContentLoaded", (e) => {
   hamburgerMenu(".panel-btn", ".nav-main", "nav-menu a");
   
 });
+
+/* end hamburger menu */
+
+/* slider */
+
+new Glide('.glide').mount()
+
+

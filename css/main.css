@@ -104,9 +104,9 @@ body {
   scroll-behavior: smooth;
 }
 
-nav {
+.nav-main {
   position: fixed;
-  top: 0;
+  top: 0px;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -114,6 +114,7 @@ nav {
   justify-content: flex-end;
   min-height: 8vh;
   background-color: #5b5b5b;
+  z-index: 9999;
 }
 
 .nav-menu {
@@ -137,6 +138,14 @@ nav {
 .panel-btn{
   display: none;
 }
+
+.slider-container{
+  position: relative;
+  top: 8vh;
+  display: flex;
+  justify-content: center;
+}
+
 
 @media (max-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
